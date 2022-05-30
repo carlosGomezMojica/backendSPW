@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon handler"
+    "start": "node handler.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
