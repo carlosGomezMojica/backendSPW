@@ -7,6 +7,7 @@ exports.crearDescuadre = async (req, callback) => {
     let body = req.body
 
     var descuadre = new Descuadre({
+      fecha:Date.now(),
       descripcion: body.descripcion,
       correccion: body.correccion,
       informe: body.informe,
