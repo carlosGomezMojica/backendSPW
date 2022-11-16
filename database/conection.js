@@ -6,7 +6,7 @@ let options = {
   useUnifiedTopology: true,
 
 }
-let url = 'mongodb+srv://gestorInventario:gestorInventario123@cluster0.smp6t.mongodb.net/gestorInventario?retryWrites=true&w=majority'
+let url = 'mongodb+srv://carlosgomez:manuelito21@cluster0.lrn9hhn.mongodb.net/?retryWrites=true&w=majority'
 module.exports = connectToDatabase = () => {
   if (isConnected) {
         return Promise.resolve()
