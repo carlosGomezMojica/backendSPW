@@ -6,7 +6,10 @@ exports.crearDescuadre = async (req, callback) => {
     await connectionDb()
     let body = req.body
 
+    let fecha = new Date();
+  
     var descuadre = new Descuadre({
+      fecha:fecha.getUTCDate(),
       descripcion: body.descripcion,
       correccion: body.correccion,
       informe: body.informe,
