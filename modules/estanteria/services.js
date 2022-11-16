@@ -52,7 +52,7 @@ exports.listarEstanteria = async (req, callback) => {
   try {
     await connectionDb()
 
-    var estanteria = await Estanterias.find()
+    var estanteria = await Estanteria.find()
     
     return callback(null, {estanteria})
   } catch (error) {
