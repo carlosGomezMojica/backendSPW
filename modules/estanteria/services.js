@@ -9,7 +9,6 @@ exports.crearEstanteria = async (req, callback) => {
 
     let estanteria = new Estanteria({
         _id_product: body.id_product,
-        fecha: body.fecha,
         cantidad: body.cantidad
     })
 
