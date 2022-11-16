@@ -6,7 +6,7 @@ let Schema = mongoose.Schema
 let descuadreSchema = new Schema({
     fecha:{
         type: Date,
-        default: Date.now(),
+        default: new Date.now(),
         required:[true,'la fecha es requerida']
     },
     descripcion:{
